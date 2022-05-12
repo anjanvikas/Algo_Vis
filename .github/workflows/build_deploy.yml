@@ -25,9 +25,8 @@ jobs:
     - name: Install NPM packages
       run: npm install
       env:
-      	CI: false
-    
-    - name: Build project
+          CI: false
+    - name: Generate build
       run: CI=false npm run build
     
     - name: Upload production-ready build files
